@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Rips all images and videos from Kemono and downloads them as a zip
 // @author       Ementhia
-// @icon         https://github.com/Ementhia/kemono-file-ripper/kr-png.png
+// @icon         https://raw.githubusercontent.com/Ementhia/kemono-file-ripper/main/kr-png.png
 // @match        https://kemono.party/*
 // @match        https://kemono.cr/*
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
@@ -183,4 +183,5 @@
         });
         observer.observe(document.body, {childList: true, subtree: true});
         })(jQuery);
+
     })();
