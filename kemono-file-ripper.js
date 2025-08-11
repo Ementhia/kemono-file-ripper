@@ -1,16 +1,19 @@
 // ==UserScript==
 // @name         Kemono File Ripper
-// @namespace    http://tampermonkey.net/
+// @namespace    Tampermonkey/Violentmonkey Scripts
 // @version      1.0
 // @description  Rips all images and videos from Kemono and downloads them as a zip
 // @author       Ementhia
 // @icon         https://raw.githubusercontent.com/Ementhia/kemono-file-ripper/main/kr-png.png
 // @match        https://kemono.party/*
 // @match        https://kemono.cr/*
+// @copyright    2025+, Ementhia (https://github.com/Ementhia/kemono-file-ripper)
+// @license     GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js
 // @grant        none
+// @description  Rips all the static images and videos and files from Kemono and downloads them as a zip
 // ==/UserScript==
 
 /* global JSZip, saveAs, jQuery */
@@ -183,5 +186,4 @@
         });
         observer.observe(document.body, {childList: true, subtree: true});
         })(jQuery);
-
     })();
