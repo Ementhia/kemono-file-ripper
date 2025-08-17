@@ -14,4 +14,5 @@ Tampermonkey/Violentmonkey extension for downloading all images, GIFs, videos, a
 - Supported on both `kemono.party` and `kemono.cr` domains
 
 ### License
-MIT
+GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
+
