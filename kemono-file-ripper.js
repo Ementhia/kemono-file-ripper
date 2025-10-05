@@ -117,7 +117,11 @@
                         return response.blob();
                     })
                     .then(blob => {
-                        zip.file(media.filename, blob);
+                        const index = mediaLinks.indexOf(media) + 1;
+                        const ext = media.filename.includes('.') ? media.filename.split('.').pop() : '';
+                        const baseName = title !== 'Kemono_Post' ? title : 'file';
+                        const newFilename = `${sanitizeString(baseName)}_${index}${ext ? '.' + ext : ''}`;
+                        zip.file(newFilename,  blob);
                     })
                     .catch(() => {
                         alert(`Failed to download ${media.filename}`);
