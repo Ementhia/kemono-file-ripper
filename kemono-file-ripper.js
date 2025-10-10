@@ -7,7 +7,7 @@
 // @icon         https://raw.githubusercontent.com/Ementhia/kemono-file-ripper/main/kr-png.png
 // @match        https://kemono.party/*
 // @match        https://kemono.cr/*
-// @copyright    2025+, Ementhia (https://github.com/Ementhia/kemono-file-ripper)
+// @copyright    2025+, Selentia (https://github.com/Selentia-IX/kemono-file-ripper)
 // @license      GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js
@@ -191,4 +191,5 @@
         observer.observe(document.body, {childList: true, subtree: true});
         })(jQuery);
     })();
+
 
